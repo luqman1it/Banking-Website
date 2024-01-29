@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/style.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Banking Website</title>
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wide">
+    <!-- Start Header -->
+    <header>
+        <div class="container flex justify-between items-center mx-auto px-4 md:px-6">
+            <div class="font-bold text-3xl py-6 text-color-secondary">
+                <a href="#"><span class="text-color-white">Luqman</span>Ali</a>
+            </div>
+            <nav class="hidden lg:flex space-x-6 items-center">
+                <a href="#" class="hover:text-color-secondary ease duration-200">Home</a>
+                <a href="#" class="hover:text-color-secondary ease duration-200">Features</a>
+                <a href="#" class="hover:text-color-secondary ease duration-200">Testimonial</a>
+                <a href="#" class="hover:text-color-secondary ease duration-200">Pricing</a>
+                <a href="#" class="hover:text-color-secondary ease duration-200">Blog</a>
+                <a href="#" class="hover:text-color-secondary ease duration-200">Contact</a>
+                <a href="#"
+                    class="py-3 px-9 bg-color-secondary rounded-md font-bold capitalize hover:opacity-80 ease-in duration-200">Free
+                    Trial</a>
+            </nav>
+            <div class="lg:hidden cursor-pointer" id="burger">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+        </div>
+
+        <div class="hidden flex absolute z-50 w-full top-0  flex-col text-center space-y-10 mx-auto bg-color-primary"
+            id="menu">
+            <div class="close absolute right-5 top-3 cursor-pointer" id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="#" class="hover:text-color-secondary ease duration-200">Home</a>
+            <a href="#" class="hover:text-color-secondary ease duration-200">Features</a>
+            <a href="#" class="hover:text-color-secondary ease duration-200">Testimonial</a>
+            <a href="#" class="hover:text-color-secondary ease duration-200">Pricing</a>
+            <a href="#" class="hover:text-color-secondary ease duration-200">Blog</a>
+            <a href="#" class="pb-4">Contact</a>
+
+    </header>
+    <!-- Start Header -->
+
+    <!-- Start Hero -->
+    <section id="home" class="relative">
+        <div class="blob1">
+        </div>
+        <div class="blob2">
+        </div>
+        <div class="global space-y-6 md:space-y-1 flex flex-col space-x-9 items-center md:flex-row ">
+            <div class="flex flex-col space-y-9 md:w-1/2">
+                <h1 class="title">Awesome App For Your Financial</h1>
+                <p class="md:text-2xl">This should be used to tell a story and let your users know a little more about
+                    app
+                    and it's use, How
+                    can benefit them</p>
+                <li class="list-none">
+                    <a href="#" class="btn">Download
+                        App</a>
+                </li>
+            </div>
+            <div class="md:w-1/2">
+                <img src="./images/undraw_undraw_shopping_bags_2ude_-1-_mnw3.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Start Features -->
+    <section id="features" class="bg-color-primary-light">
+        <div class="global flex flex-col">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <span class="text-color-secondary mb-4 block">Our Future</span>
+                <h1 class="title ">Easy To Manage Your All Payments By Our App</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 px-4">
+                <div
+                    class="py-20 px-5 text-center border-2 border-color-gray rounded-xl hover:bg-color-primary-dark ease-in duration-200">
+                    <i class="fa-solid fa-calendar-days myIcon"></i>
+                    <h3 class="text-xl md:text-2xl py-4 font-bold">Expense Trackering</h3>
+                    <p class="leading-relaxed">we use an application designed a testing gnose to keep away</p>
+                </div>
+                <div
+                    class="py-20 px-5 text-center border-2 border-color-gray rounded-xl hover:bg-color-primary-dark ease-in duration-200">
+                    <i class="fa-solid fa-chart-line myIcon"></i>
+                    <h3 class="text-xl md:text-2xl py-4 font-bold">Finance Snapshot</h3>
+                    <p class="leading-relaxed">we use an application designed a testing gnose to keep away</p>
+                </div>
+                <div
+                    class="py-20 px-5 text-center border-2 border-color-gray rounded-xl hover:bg-color-primary-dark ease-in duration-200">
+                    <i class="fa-solid fa-phone myIcon"></i>
+                    <h3 class="text-xl md:text-2xl py-4 font-bold">Support 24/24</h3>
+                    <p class="leading-relaxed">we use an application designed a testing gnose to keep away</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Features -->
+
+    <!-- Start Save Money -->
+    <section id="saveMoney" class="relative">
+        <div
+            class="w-80 h-80 rounded-full bg-color-blob absolute -z-10 -left-5 top-0 blur-2xl opacity-30 overflow-hidden">
+        </div>
+        <div
+            class="w-80 h-80 rounded-full bg-color-secondary absolute -z-10 bottom-10 right-0 blur-2xl opacity-30 overflow-hidden">
+        </div>
+        <div class="global space-y-4  flex flex-col space-x-9 items-center md:flex-row ">
+            <div class="md:w-1/2">
+                <img src="./images/undraw_savings_re_eq4w.svg" alt="">
+            </div>
+            <div class="flex flex-col space-y-4 md:w-1/2">
+                <span class="text-color-secondary font-bold">Saving money</span>
+                <h1 class="title">Best Financing App To Save Your Money</h1>
+                <p class="md:text-2xl pb-4">Best financing app ever in the world. Easy to use and very user friendly for
+                    mobile banking. You can control your card easily and send money some one just one click.</p>
+                <li class="list-none">
+                    <a href="#" class="btn">Read More</a>
+                </li>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Save Money -->
+
+    <secttion id="work" class="bg-color-primary-dark">
+        <div class="global flex flex-col">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <span class="text-color-secondary mb-4 block">How it Works</span>
+                <h1 class="title ">Grow Up Your Money Saving</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:gap-8 px-4">
+                <div class="py-10 px-5 text-center rounded-xl ">
+                    <span
+                        class="text-color-white hover:bg-color-secondary bg-color-primary-dark text-5xl md:text-6xl rounded-xl py-2 px-6 mb-2 inline-block ">1</span>
+                    <h3 class="text-xl md:text-2xl py-4 font-bold">Install The App</h3>
+                    <p class="leading-relaxed">we use an application designed a testing gnose to keep away</p>
+                </div>
+                <div class="py-10 px-5 text-center rounded-xl ">
+                    <span
+                        class="text-color-white hover:bg-color-primary bg-color-secondary text-5xl md:text-6xl rounded-xl py-2 px-6 mb-2 inline-block">2</span>
+
+                    <h3 class="text-xl md:text-2xl py-4 font-bold">Setup Your Profile</h3>
+                    <p class="leading-relaxed">we use an application designed a testing gnose to keep away</p>
+                </div>
+                <div class="py-10 px-5 text-center  rounded-xl ">
+                    <span
+                        class="text-color-white hover:bg-color-secondary bg-color-primary-dark text-5xl md:text-6xl rounded-xl py-2 px-6 mb-2 inline-block">3</span>
+                    <h3 class="text-xl md:text-2xl py-4 font-bold">Enjoy The Features!</h3>
+                    <p class="leading-relaxed">we use an application designed a testing gnose to keep away</p>
+                </div>
+
+            </div>
+        </div>
+    </secttion>
+
+    <!-- Start Review -->
+    <section id="review" class="">
+        <div class="global">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <span class="text-color-secondary mb-4 block">User Review</span>
+                <h1 class="title ">What Clients Say About Your App After Use It</h1>
+            </div>
+            <div class="flex justify-center items-center flex-wrap space-x-4   " id="users">
+                <img src="./images/person1.avif" data-user=".one" alt=""
+                    class="cursor-pointer h-10 w-10 rounded-full md:h-20 md:w-20 borderActive">
+                <img src="./images/person2.jpg" data-user=".two" alt=""
+                    class="cursor-pointer h-10 w-10 rounded-full md:h-20 md:w-20">
+                <img src="./images/person3.jpg" data-user=".three" alt=""
+                    class="cursor-pointer h-10 w-10 rounded-full md:h-20 md:w-20">
+                <img src="./images/person4.webp" data-user=".four" alt=""
+                    class="cursor-pointer h-10 w-10 rounded-full md:h-20 md:w-20">
+                <img src="./images/person5.avif" data-user=".five" alt=""
+                    class="cursor-pointer h-10 w-10 rounded-full md:h-20 md:w-20">
+            </div>
+            <div class="text-center mt-10 w-3/4 mx-auto" id="reviews">
+                <div class="one md:text-2xl">
+                    <p>"This should be used to tell a story and include any testimonials you
+                        might
+                        have about your product or service for your clients"
+                    </p>
+                    <h4 class="font-bold text-color-secondary mb-1">Markin Nesus</h4>
+                </div>
+                <div class="hidden two md:text-2xl">
+                    <p>"Electronic payment has made my life so much more convenient. I love being able to make
+                        transactions from the comfort of my home or on the go. It's fast, secure, and has simplified
+                        managing my finances"
+                    </p>
+                    <h4 class="font-bold text-color-secondary mb-1">Vera Duncan</h4>
+                </div>
+                <div class="hidden three md:text-2xl">
+                    <p>"I appreciate the variety of electronic payment options available today. Whether it's using
+                        mobile wallets, credit cards, or online banking, having choices allows me to pick the method
+                        that suits a particular situation best."
+                    </p>
+                    <h4 class="font-bold text-color-secondary mb-1">Pirtle Karol</h4>
+                </div>
+                <div class="hidden four md:text-2xl">
+                    <p>"I'm excited about the future of electronic payments, especially with emerging technologies like
+                        cryptocurrencies. The idea of more decentralized and efficient systems is intriguing, and I'm
+                        curious to see how they evolve."
+                    </p>
+                    <h4 class="font-bold text-color-secondary mb-1">Mark Joe</h4>
+                </div>
+                <div class="hidden five md:text-2xl">
+                    <p>"I love when electronic payment methods offer rewards or cashback programs. It's a nice bonus for
+                        using the service, and it incentivizes me to stick with a particular platform."
+                    </p>
+                    <h4 class="font-bold text-color-secondary mb-1">Leila Domniuc</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Review -->
+
+    <!-- Start Pricing -->
+    <section id="pricing" class="bg-color-primary-light">
+        <div class="global">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-color-secondary mb-4">Pricing</h4>
+                <h1 class="title">Get In Reasonable Price</h1>
+
+
+                <!-- Rounded switch  -->
+                <div class="mt-5 flex items-center justify-center gap-4">
+                    <p>Bill Monthly</p>
+                    <label class="cursor-pointer relative inline-block w-20 h-8 rounded-full">
+                        <input type="checkbox" id="toggleBtn" class="peer opacity-0 w-0 h-0">
+                        <span
+                            class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"></span>
+                    </label>
+                    <p>Bill Anually</p>
+                </div>
+            </div>
+
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div class="card relative h-auto w-auto">
+                    <!-- front side  -->
+                    <div id="card_1_front"
+                        class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                        <div class="relative">
+                            <p
+                                class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                20<span class="text-sm font-normal tracking-widest">/per month</span>
+                            </p>
+                        </div>
+
+                        <div class="py-10">
+                            <h3 class="text-xl font-bold pb-3">Basic</h3>
+                            <p class="leading-relaxed">For Beginner Who Want To Scale Business Globaly</p>
+                        </div>
+
+                        <ul class="space-y-4 pb-10">
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Expense Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Card Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Instant Statistics</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Bookmark Function</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Accounting System</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Started</button>
+                    </div>
+
+                    <!-- back side  -->
+                    <div id="card_1_back"
+                        class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                        <div class="relative">
+                            <p
+                                class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                120<span class="text-sm font-normal tracking-widest">/per month</span>
+                            </p>
+                        </div>
+
+                        <div class="py-10">
+                            <h3 class="text-xl font-bold pb-3">Basic</h3>
+                            <p class="leading-relaxed">For Beginner Who Want To Scale Business Globaly</p>
+                        </div>
+
+                        <ul class="space-y-4 pb-10">
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Expense Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Card Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Instant Statistics</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Bookmark Function</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Accounting System</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card relative h-auto w-auto">
+                    <!-- front side  -->
+                    <div id="card_2_front"
+                        class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                        <div class="relative">
+                            <p
+                                class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                50<span class="text-sm font-normal tracking-widest">/per month</span>
+                            </p>
+                        </div>
+
+                        <div class="py-10">
+                            <h3 class="text-xl font-bold pb-3">Standard</h3>
+                            <p class="leading-relaxed">For Beginner Who Want To Scale Business Globaly</p>
+                        </div>
+
+                        <ul class="space-y-4 pb-10">
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Expense Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Card Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Instant Statistics</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Bookmark Function</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Accounting System</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Started</button>
+                    </div>
+
+                    <!-- back side  -->
+                    <div id="card_2_back"
+                        class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                        <div class="relative">
+                            <p
+                                class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                150<span class="text-sm font-normal tracking-widest">/per month</span>
+                            </p>
+                        </div>
+
+                        <div class="py-10">
+                            <h3 class="text-xl font-bold pb-3">Standard</h3>
+                            <p class="leading-relaxed">For Beginner Who Want To Scale Business Globaly</p>
+                        </div>
+
+                        <ul class="space-y-4 pb-10">
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Expense Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Card Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Instant Statistics</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Bookmark Function</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Accounting System</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card relative h-auto w-auto">
+                    <!-- front side  -->
+                    <div id="card_3_front"
+                        class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+                        <div class="relative">
+                            <p
+                                class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                100<span class="text-sm font-normal tracking-widest">/per month</span>
+                            </p>
+                        </div>
+
+                        <div class="py-10">
+                            <h3 class="text-xl font-bold pb-3">Basic</h3>
+                            <p class="leading-relaxed">For Beginner Who Want To Scale Business Globaly</p>
+                        </div>
+
+                        <ul class="space-y-4 pb-10">
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Expense Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Card Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Instant Statistics</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Bookmark Function</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Accounting System</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Started</button>
+                    </div>
+
+                    <!-- back side  -->
+                    <div id="card_3_back"
+                        class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0">
+                        <div class="relative">
+                            <p
+                                class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                500<span class="text-sm font-normal tracking-widest">/per month</span>
+                            </p>
+                        </div>
+
+                        <div class="py-10">
+                            <h3 class="text-xl font-bold pb-3">Premium</h3>
+                            <p class="leading-relaxed">For Beginner Who Want To Scale Business Globaly</p>
+                        </div>
+
+                        <ul class="space-y-4 pb-10">
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Expense Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                <span class="pl-4">Card Management</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Instant Statistics</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Bookmark Function</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                <span class="pl-4">Accounting System</span>
+                            </li>
+                        </ul>
+
+                        <button class="btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Pricing -->
+
+    <!-- Sart Plog -->
+    <section id="plog">
+        <div class="global">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-color-secondary mb-4">Innovation and Quality Improvement</h4>
+                <h1 class="title">Latest Updates, Solutions And Company News</h1>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- box 1 -->
+                <div class="flex flex-col space-y-6 ">
+                    <div class="overflow-hidden rounded-2xl">
+                        <img src="./images/plog1.webp" alt="" class="hover:scale-150 duration-200 ease-linear">
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <p>20 August 2024</p>
+                        <p>1 min read</p>
+                    </div>
+
+                    <h2 class="capitalize text-2xl font-bold underline">for Ways to cheer yourself up on blue monday!
+                    </h2>
+
+                    <p>On the second edition of Serious Business, Inc. editor Jim Ledbetter and Fusion senior editor
+                        Salmon debate...</p>
+
+                    <a href="" class="underline hover:text-color-secondary">Read More</a>
+
+                </div>
+
+                <!-- box 2 -->
+                <div class="flex flex-col space-y-6 ">
+                    <div class="overflow-hidden rounded-2xl">
+                        <img src="./images/plog2.webp" alt="" class="hover:scale-150 duration-200 ease-linear">
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <p>18 April 2024</p>
+                        <p>1 min read</p>
+                    </div>
+
+                    <h2 class="capitalize text-2xl font-bold underline">How to Organize Your budget for Maximum
+                        Productivity?
+                    </h2>
+
+                    <p>Global provider connected products for consumers, and enterprises worldwide, supply chain control
+                        is everything...</p>
+
+                    <a href="" class="underline hover:text-color-secondary">Read More</a>
+
+                </div>
+
+                <!-- box 3 -->
+                <div class="flex flex-col space-y-6 justify-center">
+                    <div class="overflow-hidden rounded-2xl">
+                        <img src="./images/plog3.jpg" alt="" class="hover:scale-150 duration-200 ease-linear">
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <p>30 May 2024</p>
+                        <p>1 min read</p>
+                    </div>
+
+                    <h2 class="capitalize text-2xl font-bold underline">Should Small Businesses Be Entitled to system?
+                    </h2>
+
+                    <p>Our team provides skilled & experienced managers who know the intricacies of this vertical and
+                        focus...</p>
+                    <a href="" class="underline hover:text-color-secondary">Read More</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Plog -->
+
+    <!-- Start Download App -->
+    <section id="download-app" class="bg-color-primary-light">
+        <div class="global h-[80vh]">
+            <div class="text-center m-auto mb-20 w-fit ">
+                <h4 class="title">Download App Now And Save Your Money</h4>
+                <p class="text-1xl pt-4">Saving an impressive list of long-term money with experience and expertise im
+                    multiple
+                    industries</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-5">
+                <div class=" ">
+                    <img src="./images/google.webp" alt="" class="w-44 h-16 rounded-lg cursor-pointer">
+                </div>
+                <div class="">
+                    <img src="./images/appstore.jpg" alt="" class="w-44 h-16  rounded-lg cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Download App -->
+
+    <!-- Start Contact -->
+    <section id="contact">
+        <div class="global">
+            <div class="text-center m-auto mb-20 md:w-1/2">
+                <h4 class="font-bold text-color-secondary mb-4">Have A Questions</h4>
+                <h1 class="title">Get In Touch</h1>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-2 md:gap-12 lg:w-3/4 mx-auto">
+                <input type="text" name="" id="" placeholder="Name"
+                    class="border-2 border-gray-300 focus:border-color-secondary p-3 rounded-lg outline-none text-black">
+                <input type="email" name="" id="" placeholder="Email"
+                    class=" border-2 border-gray-300 focus:border-color-secondary p-3 rounded-lg outline-none text-black">
+                <input type="number" name="" id="" placeholder="number"
+                    class="border-2 border-gray-300 focus:border-color-secondary p-3 rounded-lg outline-none text-black">
+                <input type="text" name="" id="" placeholder="Company"
+                    class="border-2 border-gray-300 focus:border-color-secondary p-3 rounded-lg outline-none text-black">
+                <textarea placeholder="Message"
+                    class="border-2 border-gray-300 focus:border-color-secondary md:col-start-1 md:col-end-3 p-3 rounded-lg outline-none text-black"></textarea>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <section id="footer" class="bg-color-primary-light">
+        <div class="global">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col space-y-6">
+                    <h3 class="font-bold">About App</h3>
+                    <p>This Should Be Used To Tell A Story And Include Any Testimonials You Might Have About Your
+                        Product Or Service For Your Clients</p>
+                    <ul class="flex space-x-4 items-center">
+                        <span>Follow Us</span>
+                        <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"></i>
+                        <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+                        <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"></i>
+                        <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="flex flex-col">
+                        <h3 class="font-bold pb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="" class="underline hover:text-color-secondary">Home</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Featuers</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Testimontial</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Pricing</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Blog</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="font-bold pb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="" class="underline hover:text-color-secondary">About Us</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Partners</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Career</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Reviews</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Terms & Condaitions</a></li>
+                            <li><a href="" class="underline hover:text-color-secondary">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col space-y-6">
+                    <h3 class="font-bold">NewsLetter</h3>
+                    <p>Subscribe With Email And Loads Or News Will Be Sent To You</p>
+                    <div class="relative overflow-hidden">
+                        <input type="text"
+                            class="w-full border-2 border-gray-300 focus:border-color-secondary p-3 rounded-lg outline-none text-black"
+                            placeholder="Enter Your Email">
+                        <span
+                            class="absolute w-14 h-14 bottom-0 right-0 bg-color-secondary flex items-center justify-center font-bold text-3xl">></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End Footer -->
+    <div class="flex items-center justify-center py-8  bg-color-primary-dark">
+        <p>2024 @Luqman Ali, All Rights Reserved</p>
+    </div>
+
+
+
+    <script src=" script.js"></script>
+</body>
+
+</html>

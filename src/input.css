@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply py-3 px-9 bg-color-secondary rounded-md font-bold capitalize hover:opacity-80 ease-in duration-200
+}
+
+.title {
+    @apply font-bold text-2xl md:text-4xl
+}
+
+.global {
+    @apply container py-20 mx-auto px-4 md:px-6
+}
+
+.myIcon {
+    @apply text-color-white text-2xl md:text-6xl bg-color-secondary rounded-2xl p-4 inline-block
+}
+
+.blob1 {
+    @apply w-80 h-80 rounded-full bg-color-blob absolute -z-10 -left-5 top-0 blur-2xl opacity-30 overflow-hidden;
+}
+
+.blob2 {
+    @apply w-80 h-80 rounded-full bg-color-secondary absolute -z-10 bottom-10 right-0 blur-2xl opacity-30 overflow-hidden;
+}
+
+.borderActive {
+    @apply outline-4 outline outline-color-secondary duration-200 ease-linear
+}
+
+.card {
+    perspective: 1000px;
+}
+
+.back {
+    background-color: #eeb396;
+    /* color: #01051e; */
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.front {
+    overflow: hidden;
+
+}
